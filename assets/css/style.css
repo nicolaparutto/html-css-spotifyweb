@@ -7,7 +7,7 @@
 
 /* custom property */
 :root{
-   --c-grey: #585858;
+   --c-grey: #8A8E93;
    --c-lightgrey: #BDBDBD;
    --c-green: #BCFF38;
    --c-white: #fff;
@@ -21,7 +21,7 @@ body{
 a{
    text-decoration: none;
 }
-li{
+ul, ol{
    list-style: none;
 }
 
@@ -53,6 +53,91 @@ main{
 section.side-bar{
    width: 220px;
    background-color: var(--c-black);
+   position: relative;
+}
+/* __side-bar-menu__ */
+.side-bar-menu{
+   margin-left: 20px;
+}
+.logo{
+   width: 120px;
+   margin: 24px;
+}
+.serch{
+   margin-bottom: 25px;
+}
+.serch ul li{
+   margin-bottom: 5px;
+   font-size: 0.9rem;
+}
+.serch ul li a{
+   display:inline-flex;
+   align-items: center;
+   color: var(--c-grey);
+}
+.serch ul li a img{
+   width: 30px;
+   filter: brightness(0) saturate(100%) invert(33%) sepia(5%) saturate(9%) hue-rotate(24deg) brightness(94%) contrast(82%);
+   margin-right: 5px;
+}
+.playlist h4{
+   color: var(--c-white);
+   margin-bottom: 10px;
+}
+.playlist ul li{
+   line-height: 25px;
+   font-size: 0.9rem;
+}
+.playlist ul li span{ 
+   font-size: 2.5rem;
+   background-color: var(--c-grey);
+   color: var(--c-black);
+   padding: 8px 10px;
+   margin-right: 8px;
+}
+.playlist ul li a{
+   color: var(--c-grey);
+}
+.playlist ul li a:first-child{
+   display: inline-flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+/* __side-bar-btm__ */
+.side-bar-btm{
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+}
+.bottom-contain{
+   height: 100%;
+   margin: 0 20px;
+}
+.download a{
+   display: inline-flex;
+   color: var(--c-grey);
+}
+.download a img{
+   width: 20px;
+   filter: brightness(0) saturate(100%) invert(33%) sepia(5%) saturate(9%) hue-rotate(24deg) brightness(94%) contrast(82%);
+   margin-right: 10px;
+}
+.profile{
+   border-top: 1px solid var(--c-grey);
+   padding: 10px 0;
+   margin-top: 5px;
+}
+.profile a {
+   color: var(--c-white);
+   display: inline-flex;
+   align-items: center;
+}
+.profile a svg{
+   width: 25px;
+   background-color: var(--c-grey);
+   border-radius: 50px;
+   padding: 2px;
+   margin-right: 10px;
 }
 
 /* ----section-content---- */
@@ -132,18 +217,6 @@ div.header{
 .card-text span{
    color: var(--c-grey);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ====bottom-bar==== */
 section.bottom-bar{
